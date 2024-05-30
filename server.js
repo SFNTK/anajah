@@ -40,14 +40,14 @@ app.post("/send", async (req, res) => {
         const mailOptions = {
           from: "ejs06795@gmail.com",
           to: "contact@anajahacademy.com",
-          subject: "confirmation of your account",
+          subject: "New message from ${req.body.name}",
           text: `
           Hello Anajah Academy, 
-           You got a new message from ${req.body.email}
-           Full Name : ${req.body.name} 
-            Email : ${req.body.email} 
-            Phone : ${req.body.number} 
-            Message :${req.body.content} 
+          You got a new message from ${req.body.email}
+          - Full Name : ${req.body.name} 
+          - Email : ${req.body.email} 
+          - Phone : ${req.body.number} 
+          - Message :${req.body.content} 
          `,
         };
 

@@ -39,7 +39,7 @@ app.post("/send", async (req, res) => {
         });
         const mailOptions = {
           from: "ejs06795@gmail.com",
-          to: "info@anajahacademy.com",
+          to: "contact@anajahacademy.com",
           subject: "confirmation of your account",
           text: `
           Hello Anajah Academy, 

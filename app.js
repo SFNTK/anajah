@@ -43,11 +43,11 @@ app.post("/send", async (req, res) => {
           subject: `New message from ${req.body.name}`,
           text: `
             Hello Anajah Academy, 
-            You got a new message from ${req.body.email} <br/>
-            - Full Name : ${req.body.name} <br/>
-            - Email : ${req.body.email}  <br/>
-            - Phone : ${req.body.number}  <br/>
-            - Message :${req.body.content}  <br/>
+            You got a new message from ${req.body.email} 
+            - Full Name : ${req.body.name} 
+            - Email : ${req.body.email}  
+            - Phone : ${req.body.number}  
+            - Message :${req.body.content} 
          `,
         };
 
